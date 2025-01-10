@@ -1,0 +1,17 @@
+@use "../abstracts";
+
+:root {
+    --text-color: #1A162E;
+    --icon-color: brightness(0) saturate(100%) invert(7%) sepia(7%) saturate(7492%) hue-rotate(216deg) brightness(96%) contrast(95%);
+
+    --body-bg               : #F6F6F6;
+    --header-bg-color       : #eee;
+    --top-act-group-bg-color: #fff;
+    --top-act-group-shadow  : rgba(237, 237, 246, 0.20);
+    --top-act-group-separate: #EDEDF6;
+
+    @include abstracts.screen (md) {
+        --header-bg-color: #fff;
+    }
+
+}

@@ -23,15 +23,23 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
-    <style>
-      h1 {
-        font-family: "Gordita";
-      }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
+    <!-- Scripts -->
+     <script src="./assets/js/scripts.js"></script>
     <title>Project repeat 08</title>
   </head>
   <body>
+
+    <header id="header" class="header"></header>
+    <script>
+        load("#header", "./scss/templates/header.html");
+    </script>
     <h1>Hello World</h1>
+    <footer id="footer"></footer>
+    <script>
+        load("#footer", "./scss/templates/footer.html");
+    </script>
   </body>
 </html>
