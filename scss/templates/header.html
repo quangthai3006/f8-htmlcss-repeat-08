@@ -1,60 +1,124 @@
 <div class="container">
-    <div class="top-bar">
-        <!-- More -->
-         <button class="top-bar__more">
-            <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon">
-         </button>
+  <div class="top-bar">
+    <!-- More -->
+    <button class="top-bar__more">
+      <img
+        src="./assets/icons/more.svg"
+        alt=""
+        class="icon top-bar__more-icon"
+      />
+    </button>
 
-        <!-- Logo -->
-         <a href="./" class="logo">
-            <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img">
-            <h1 class="logo__title">grocerymart</h1>
+    <!-- Logo -->
+    <a href="./" class="logo">
+      <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
+      <h1 class="logo__title">grocerymart</h1>
+    </a>
 
-         </a>
+    <!-- Navbar -->
+    <div class="nav">
+      <ul class="nav__list js-dropdown-list">
+        <li class="nav-item">
+          <a href="#!" class="nav__link">Departments</a>
+          <img
+            src="./assets/icons/arrow-down.svg"
+            alt=""
+            class="icon nav__arrow"
+          />
+          <div class="dropdown">
+            <div class="dropdown__inner">
+              <div class="top-menu">
+                <div class="top-menu__main">
+                    <!-- Menu column -->
+                    <div class="menu-column__icon">
+                        <img src="./assets/img/category/cate-1.1.svg" alt="" class="menu-column__icon-1">
+                        <img src="./assets/img/category/cate-1.2.svg" alt="" class="menu-column__icon-2">
+                    </div>
+                    <div class="menu-column__content">
+                        <h2 class="menu-column__heading">All Departments</h2>
+                        <ul class="menu-column__list">
+                            <li class="menu-column-item">
+                                <a href="#!" class="menu-column__link">Savings & Featured Shops</a>
+                            </li>
+                            <li class="menu-column-item">
+                                <a href="#!" class="menu-column__link">Electronics</a>
+                            </li>
+                            <li class="menu-column-item">
+                                <a href="#!" class="menu-column__link">Clothing, Shoes & Accessories</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
 
-         <!-- Navbar -->
-          <div class="nav">
-            <ul class="nav__list">
-                <li class="nav-item">
-                    <a href="#!" class="nav__link">Departments</a>
-                    <img src="./assets/icons/arrow-down.svg" alt="" class="icon nav__arrow">
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav__link">Grocery</a>
-                    <img src="./assets/icons/arrow-down.svg" alt="" class="icon nav__arrow">
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav__link">Beauty</a>
-                    <img src="./assets/icons/arrow-down.svg" alt="" class="icon nav__arrow">
-                </li>
-            </ul>
+              </div>
+            </div>
           </div>
+        </li>
+        <li class="nav-item">
+          <a href="#!" class="nav__link">Grocery</a>
+          <img
+            src="./assets/icons/arrow-down.svg"
+            alt=""
+            class="icon nav__arrow"
+          />
 
-          <!-- Action -->
-           <div class="top-act">
-            <div class="top-act__group top-act__group--single">
-                <button class="top-act__btn">
-                    <img src="../../assets/icons/search.svg" alt="" class="icon top-act__icon">
-                </button>
-            </div>
+          
+        </li>
+        <li class="nav-item">
+          <a href="#!" class="nav__link">Beauty</a>
+          <img
+            src="./assets/icons/arrow-down.svg"
+            alt=""
+            class="icon nav__arrow"
+          />
 
-            <div class="top-act__group">
-                <button class="top-act__btn">
-                    <img src="../../assets/icons/heart.svg" alt="" class="icon top-act__icon">
-                    <span class="top-act__title">03</span>
-                </button>
-
-                <div class="top-act__separate"></div>
-
-                <button class="top-act__btn">
-                    <img src="../../assets/icons/buy.svg" alt="" class="icon top-act__icon">
-                    <span class="top-act__title">$65.42</span>
-                </button>
-            </div>
-
-            <div class="top-act__user">
-                <img src="../../assets/Image-FB/472823484_652216127142193_1598323782826273436_n.jpg" alt="avatar" class="top-act__avatar">
-            </div>
-           </div>
+         
+        </li>
+      </ul>
     </div>
+
+    <!-- Action -->
+    <div class="top-act">
+      <div class="top-act__group top-act__group--single">
+        <button class="top-act__btn">
+          <img
+            src="../../assets/icons/search.svg"
+            alt=""
+            class="icon top-act__icon"
+          />
+        </button>
+      </div>
+
+      <div class="top-act__group">
+        <button class="top-act__btn">
+          <img
+            src="../../assets/icons/heart.svg"
+            alt=""
+            class="icon top-act__icon"
+          />
+          <span class="top-act__title">03</span>
+        </button>
+
+        <div class="top-act__separate"></div>
+
+        <button class="top-act__btn">
+          <img
+            src="../../assets/icons/buy.svg"
+            alt=""
+            class="icon top-act__icon"
+          />
+          <span class="top-act__title">$65.42</span>
+        </button>
+      </div>
+
+      <div class="top-act__user">
+        <img
+          src="../../assets/Image-FB/472823484_652216127142193_1598323782826273436_n.jpg"
+          alt="avatar"
+          class="top-act__avatar"
+        />
+      </div>
+    </div>
+  </div>
 </div>

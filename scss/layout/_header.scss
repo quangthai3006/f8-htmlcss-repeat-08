@@ -21,6 +21,7 @@
 
 .top-bar {
     @extend %flex-center;
+    position: relative;
 
     @include abstracts.screen (md) {
         justify-content: space-between;
@@ -34,7 +35,7 @@
             display: block;
         }
 
-        
+
 
     }
 
@@ -49,20 +50,25 @@
     }
 
     @include abstracts.screen (xl) {
-        margin-left : 50px;
+        margin-left: 50px;
 
     }
 
     &__list {
         @extend %flex-center;
 
-        column-gap: 30px;
     }
 
     &-item {
         @extend %flex-center;
-
         column-gap: 6px;
+        padding: 0 15px;
+
+        &:hover .dropdown {
+            display: block;
+        }
+
+
     }
 
     &__link {
@@ -71,7 +77,9 @@
         line-height: 1.47;
     }
 
-    &__arrow {}
+    &__arrow {
+
+    }
 }
 
 .top-act {
