@@ -1,21 +1,23 @@
+@use "../abstracts";
+
 .dropdown {
-    position      : absolute;
-    top           : 0;
-    left          : 0;
-    padding-top   : 60px;
-    margin-top    : 50px;
-    // display    : none;
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    padding-top: 80px;
+    margin-top : 30px;
+    display    : none;
 
     &__inner {
-        --inner-padding: 30px;
-        position        : relative;
-        padding         : var(--inner-padding);
-        // width        : 92%;
-        width           : 1140px;
-        // max-height      : min(582px, 100vh - 154px);
-        border-radius   : 20px;
-        background      : var(--dropdown-bg-color);
-        box-shadow      : 0px 40px 90px 20px var(--dropdown-bg-shadow);
+        --inner-padding       : 30px;
+        position              : relative;
+        padding               : var(--inner-padding);
+        width                 : 82vw;
+        // width              : 1140px;
+        // height      : min(582px, 100vh - 154px);
+        border-radius         : 20px;
+        background            : var(--dropdown-bg-color);
+        box-shadow            : 0px 40px 90px 20px var(--dropdown-bg-shadow);
 
         &::before {
             content  : url(../icons/dropdown-arrow.svg);
@@ -29,12 +31,11 @@
 }
 
 .top-menu {
+    position: relative;
 
     &__main {
-        display: flex;
-        gap    : 14px;
 
-        width     : 292px;
+        width : 292px;
         height: calc(min(582px, 100vh - 154px) - var(--inner-padding) * 2);
 
         border-right: 1px solid var(--top-menu-main-border-color);
@@ -44,18 +45,28 @@
 }
 
 .menu-column {
+    display: flex;
+    gap    : 14px;
+
+    +.menu-column {
+        margin-top: 25px;
+    }
 
     &__icon {
         position   : relative;
         flex-shrink: 0;
         width      : 36px;
         height     : 36px;
+
+        @include abstracts.screen (xl) {
+            display: none;
+        }
     }
 
     &__icon-1 {
         width     : 30px;
         height    : 30px;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     &__icon-2 {
@@ -64,7 +75,7 @@
         bottom    : 0;
         width     : 24px;
         height    : 24px;
-        object-fit: cover;
+        object-fit: contain;
         filter    : var(--menu-column-icon-color)
     }
 
@@ -81,10 +92,15 @@
     }
 
     &-item {
-        &:hover {
-            color      : #0071DC;
-            font-weight: 500;
+        &:hover .sub-menu {
+            display: grid;
         }
+    }
+
+    &-item:hover>&__link {
+
+        color      : #0071DC;
+        font-weight: 500;
     }
 
     &__link {
@@ -94,5 +110,35 @@
         font-size  : 14px;
         font-weight: 400;
         line-height: 1.43;
+    }
+
+    &__content {
+        flex: 1;
+    }
+}
+
+.sub-menu {
+    position             : absolute;
+    display              : none;
+    grid-template-columns: repeat(3, 1fr);
+    inset                : 0 0 0 292px;
+    overflow-y           : auto;
+    gap                  : 30px;
+    padding-left         : 30px;
+
+
+    &__column {
+        // padding-left: 30px;
+
+    }
+
+    &--not-main {
+        position             : initial;
+        inset                : initial;
+        display              : grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-left         : 0;
+
+
     }
 }

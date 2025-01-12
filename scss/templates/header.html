@@ -1,7 +1,7 @@
 <div class="container">
   <div class="top-bar">
     <!-- More -->
-    <button class="top-bar__more">
+    <button class="top-bar__more js-toggle" toggle-target="#navbar">
       <img
         src="./assets/icons/more.svg"
         alt=""
@@ -16,7 +16,14 @@
     </a>
 
     <!-- Navbar -->
-    <div class="nav">
+    <div class="nav hide" id="navbar">
+      <!-- Arrow left -->
+       <button class="nav__arrow-left js-toggle" toggle-target="#navbar">
+        <img src="./assets/icons/arrow-left.svg" alt="" class="nav__arrow-left-icon">
+       </button>
+
+
+       <!-- Nav -->
       <ul class="nav__list js-dropdown-list">
         <li class="nav-item">
           <a href="#!" class="nav__link">Departments</a>
@@ -29,28 +36,299 @@
             <div class="dropdown__inner">
               <div class="top-menu">
                 <div class="top-menu__main">
+                  <div class="menu-column">
                     <!-- Menu column -->
                     <div class="menu-column__icon">
-                        <img src="./assets/img/category/cate-1.1.svg" alt="" class="menu-column__icon-1">
-                        <img src="./assets/img/category/cate-1.2.svg" alt="" class="menu-column__icon-2">
+                      <img
+                        src="./assets/img/category/cate-1.1.svg"
+                        alt=""
+                        class="menu-column__icon-1"
+                      />
+                      <img
+                        src="./assets/img/category/cate-1.2.svg"
+                        alt=""
+                        class="menu-column__icon-2"
+                      />
                     </div>
                     <div class="menu-column__content">
-                        <h2 class="menu-column__heading">All Departments</h2>
-                        <ul class="menu-column__list">
-                            <li class="menu-column-item">
-                                <a href="#!" class="menu-column__link">Savings & Featured Shops</a>
-                            </li>
-                            <li class="menu-column-item">
-                                <a href="#!" class="menu-column__link">Electronics</a>
-                            </li>
-                            <li class="menu-column-item">
-                                <a href="#!" class="menu-column__link">Clothing, Shoes & Accessories</a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
+                      <h2 class="menu-column__heading">All Departments</h2>
+                      <ul class="menu-column__list">
+                        <li class="menu-column-item">
+                          <a href="#!" class="menu-column__link"
+                            >Savings & Featured Shops</a
+                          >
+                          <div class="sub-menu">
+                            <!-- Sub Menu column 1 -->
+                            <div class="sub-menu__column">
+                              <!-- Sub Menu column 1.1 -->
 
+                              <div class="menu-column">
+                                <div class="menu-column__icon">
+                                  <img
+                                    src="./assets/img/category/cate-1.1.svg"
+                                    alt=""
+                                    class="menu-column__icon-1"
+                                  />
+                                  <img
+                                    src="./assets/img/category/cate-1.2.svg"
+                                    alt=""
+                                    class="menu-column__icon-2"
+                                  />
+                                </div>
+                                <div class="menu-column__content">
+                                  <h2 class="menu-column__heading">
+                                    All Departments
+                                  </h2>
+                                  <ul class="menu-column__list">
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Savings & Featured Shops</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Electronics</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >TV Mounts & Accessories</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <!-- Sub Menu column 1.2 -->
+
+                              <div class="menu-column">
+                                <div class="menu-column__icon">
+                                  <img
+                                    src="./assets/img/category/cate-1.1.svg"
+                                    alt=""
+                                    class="menu-column__icon-1"
+                                  />
+                                  <img
+                                    src="./assets/img/category/cate-1.2.svg"
+                                    alt=""
+                                    class="menu-column__icon-2"
+                                  />
+                                </div>
+                                <div class="menu-column__content">
+                                  <h2 class="menu-column__heading">
+                                    All Departments
+                                  </h2>
+                                  <ul class="menu-column__list">
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Savings & Featured Shops</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Electronics</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >TV Mounts & Accessories</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Sub Menu column 2 -->
+                            <div class="sub-menu__column">
+                              <!-- Sub Menu column 2.1 -->
+                              <div class="menu-column">
+                                <div class="menu-column__icon">
+                                  <img
+                                    src="./assets/img/category/cate-1.1.svg"
+                                    alt=""
+                                    class="menu-column__icon-1"
+                                  />
+                                  <img
+                                    src="./assets/img/category/cate-1.2.svg"
+                                    alt=""
+                                    class="menu-column__icon-2"
+                                  />
+                                </div>
+                                <div class="menu-column__content">
+                                  <h2 class="menu-column__heading">
+                                    All Departments
+                                  </h2>
+                                  <ul class="menu-column__list">
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Savings & Featured Shops</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Electronics</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >TV Mounts & Accessories</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <!-- Sub Menu column 2.2 -->
+
+                              <div class="menu-column">
+                                <div class="menu-column__icon">
+                                  <img
+                                    src="./assets/img/category/cate-1.1.svg"
+                                    alt=""
+                                    class="menu-column__icon-1"
+                                  />
+                                  <img
+                                    src="./assets/img/category/cate-1.2.svg"
+                                    alt=""
+                                    class="menu-column__icon-2"
+                                  />
+                                </div>
+                                <div class="menu-column__content">
+                                  <h2 class="menu-column__heading">
+                                    All Departments
+                                  </h2>
+                                  <ul class="menu-column__list">
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Savings & Featured Shops</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Electronics</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >TV Mounts & Accessories</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Sub Menu column 3 -->
+                            <div class="sub-menu__column">
+                              <!-- Sub Menu column 3.1 -->
+                              <div class="menu-column">
+                                <div class="menu-column__icon">
+                                  <img
+                                    src="./assets/img/category/cate-1.1.svg"
+                                    alt=""
+                                    class="menu-column__icon-1"
+                                  />
+                                  <img
+                                    src="./assets/img/category/cate-1.2.svg"
+                                    alt=""
+                                    class="menu-column__icon-2"
+                                  />
+                                </div>
+                                <div class="menu-column__content">
+                                  <h2 class="menu-column__heading">
+                                    All Departments
+                                  </h2>
+                                  <ul class="menu-column__list">
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Savings & Featured Shops</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Electronics</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >TV Mounts & Accessories</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <!-- Sub Menu column 3.2 -->
+                              <div class="menu-column">
+                                <div class="menu-column__icon">
+                                  <img
+                                    src="./assets/img/category/cate-1.1.svg"
+                                    alt=""
+                                    class="menu-column__icon-1"
+                                  />
+                                  <img
+                                    src="./assets/img/category/cate-1.2.svg"
+                                    alt=""
+                                    class="menu-column__icon-2"
+                                  />
+                                </div>
+                                <div class="menu-column__content">
+                                  <h2 class="menu-column__heading">
+                                    All Departments
+                                  </h2>
+                                  <ul class="menu-column__list">
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Savings & Featured Shops</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >Electronics</a
+                                      >
+                                    </li>
+                                    <li class="menu-column-item">
+                                      <a href="#!" class="menu-column__link"
+                                        >TV Mounts & Accessories</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="menu-column-item">
+                          <a href="#!" class="menu-column__link">Electronics</a>
+                        </li>
+                        <li class="menu-column-item">
+                          <a href="#!" class="menu-column__link"
+                            >TV Mounts & Accessories</a
+                          >
+                        </li>
+
+                        <li class="menu-column-item">
+                          <a href="#!" class="menu-column__link">Electronics</a>
+                        </li>
+                        <li class="menu-column-item">
+                          <a href="#!" class="menu-column__link"
+                            >TV Mounts & Accessories</a
+                          >
+                        </li>
+
+                        <li class="menu-column-item">
+                          <a href="#!" class="menu-column__link">Electronics</a>
+                        </li>
+                        <li class="menu-column-item">
+                          <a href="#!" class="menu-column__link"
+                            >TV Mounts & Accessories</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -63,7 +341,332 @@
             class="icon nav__arrow"
           />
 
-          
+          <div class="dropdown">
+            <div class="dropdown__inner">
+              <div class="top-menu">
+                <div class="sub-menu sub-menu--not-main">
+                  <!-- Sub Menu column 1 -->
+                  <div class="sub-menu__column">
+                    <!-- Sub Menu column 1.1 -->
+
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Sub Menu column 1.2 -->
+
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sub Menu column 2 -->
+                  <div class="sub-menu__column">
+                    <!-- Sub Menu column 2.1 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Sub Menu column 2.2 -->
+
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sub Menu column 3 -->
+                  <div class="sub-menu__column">
+                    <!-- Sub Menu column 3.1 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Sub Menu column 3.2 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                   <!-- Sub Menu column 4 -->
+                   <div class="sub-menu__column">
+                    <!-- Sub Menu column 4.1 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Sub Menu column 4.2 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="nav-item">
           <a href="#!" class="nav__link">Beauty</a>
@@ -73,10 +676,338 @@
             class="icon nav__arrow"
           />
 
-         
+          <div class="dropdown">
+            <div class="dropdown__inner">
+              <div class="top-menu">
+                <div class="sub-menu sub-menu--not-main">
+                  <!-- Sub Menu column 1 -->
+                  <div class="sub-menu__column">
+                    <!-- Sub Menu column 1.1 -->
+
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Sub Menu column 1.2 -->
+
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sub Menu column 2 -->
+                  <div class="sub-menu__column">
+                    <!-- Sub Menu column 2.1 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Sub Menu column 2.2 -->
+
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sub Menu column 3 -->
+                  <div class="sub-menu__column">
+                    <!-- Sub Menu column 3.1 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Sub Menu column 3.2 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                   <!-- Sub Menu column 4 -->
+                   <div class="sub-menu__column">
+                    <!-- Sub Menu column 4.1 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Sub Menu column 4.2 -->
+                    <div class="menu-column">
+                      <div class="menu-column__icon">
+                        <img
+                          src="./assets/img/category/cate-1.1.svg"
+                          alt=""
+                          class="menu-column__icon-1"
+                        />
+                        <img
+                          src="./assets/img/category/cate-1.2.svg"
+                          alt=""
+                          class="menu-column__icon-2"
+                        />
+                      </div>
+                      <div class="menu-column__content">
+                        <h2 class="menu-column__heading">
+                          All Departments
+                        </h2>
+                        <ul class="menu-column__list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Savings & Featured Shops</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >Electronics</a
+                            >
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column__link"
+                              >TV Mounts & Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
+
     </div>
+    <!-- Overlay -->
+     <div class="nav__overlay js-toggle" toggle-target="#navbar"></div>
 
     <!-- Action -->
     <div class="top-act">
